@@ -1,0 +1,15 @@
+name: Mergify Test Delay
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  mergify-test-delay:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deliberate delay
+        run: |
+          echo "Starting deliberate delay for Category 2.2 race test"
+          sleep 300
+          echo "Delay completed"
