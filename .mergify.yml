@@ -5,3 +5,4 @@ queue_rules:
     merge_conditions:
       - check-success=mergify-test-hold
     branch_protection_injection_mode: none
+    merge_bot_account: musername1
