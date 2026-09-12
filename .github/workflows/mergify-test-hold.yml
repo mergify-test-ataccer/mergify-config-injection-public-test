@@ -1,0 +1,11 @@
+name: Mergify Test Hold
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  mergify-test-hold:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Mergify test hold passed"
