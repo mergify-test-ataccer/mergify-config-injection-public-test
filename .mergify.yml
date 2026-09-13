@@ -4,6 +4,5 @@ queue_rules:
       - base=main
     merge_conditions:
       - check-success=mergify-test-hold
-      - check-success=mergify-test-delay
     branch_protection_injection_mode: none
     merge_bot_account: musername1
