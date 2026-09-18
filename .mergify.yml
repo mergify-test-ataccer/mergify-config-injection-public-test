@@ -6,5 +6,6 @@ queue_rules:
       - check-success=mergify-test-hold
     branch_protection_injection_mode: none
     merge_bot_account: musername1
-    commit_message_template: |
-      TEST {{ title }}
+    commit_message_format:
+      title: pr-title
+      body: empty
